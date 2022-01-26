@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogDetails"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Details"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/FlightNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Flight Number"
+        android:completionThreshold="0" />
+
+    <EditText
+        android:id="@+id/commander"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Commander"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/copilot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Co-Pilot"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="From"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="To"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ATD"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ATA"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/daytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="DayTime"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/nighttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="NightTime"
+        android:textSize="20dp"/>
+
+
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/AircraftType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Aircraft Type"/>
+
+
+    <CheckBox
+        android:id="@+id/underTraining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Under Training"/>
+
+
+    <CheckBox
+        android:id="@+id/ltc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LTC"/>
+
+    <CheckBox
+        android:id="@+id/tri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRI"/>
+
+    <CheckBox
+        android:id="@+id/de"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="DE"/>
+
+
+
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+</LinearLayout>

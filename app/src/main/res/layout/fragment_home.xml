@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4F2196F3"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageButton
+        android:id="@+id/addindb"
+        android:layout_width="167dp"
+        android:layout_height="115dp"
+        android:src="@mipmap/adddataicon_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <ProgressBar
+        android:id="@+id/lastmonthprogress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="160dp"
+        android:layout_height="169dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <TextView
+        android:id="@+id/progresstext"
+        android:layout_width="102dp"
+        android:layout_height="44dp"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/lastmonthprogress"
+        app:layout_constraintEnd_toEndOf="@+id/lastmonthprogress"
+        app:layout_constraintStart_toStartOf="@+id/lastmonthprogress"
+        app:layout_constraintTop_toTopOf="@+id/lastmonthprogress" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="242dp"
+        android:layout_height="166dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/progresstext"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/monthstats"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="227dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/monthdaytime"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/monthnighttime"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="217dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="228dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dislastflight"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/lastFlight"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/disdate"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/disfrom"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/disto"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/distime"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/distothrs"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/totalHrs"
+                android:layout_width="match_parent"
+                android:layout_height="187dp"
+                android:text="TextView"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
